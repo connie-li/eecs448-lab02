@@ -38,7 +38,7 @@ bool LinkedList<T>::search(T value) const
 	Node<T>* temp = m_front;
 	bool isFound = false;
 
-	while(temp != nullptr && isfound == false)
+	while(temp != nullptr && isFound == false)
 	{
 		if(temp->getValue() == value)
 		{
