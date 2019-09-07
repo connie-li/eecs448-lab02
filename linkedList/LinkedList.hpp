@@ -111,13 +111,13 @@ bool LinkedList<T>::removeBack()
 	lastNode = m_front;
 	for(int i = 0; i < m_size - 1; i++)
 	{
-		lastNode->getNext();
+		lastNode = lastNode->getNext();
 	}
 
 	secondintoLast = m_front;
 	for(int i = 0; i < m_size - 2; i++)
 	{
-		secondintoLast->getNext();
+		secondintoLast = secondintoLast->getNext();
 	}
 
 	delete lastNode;
